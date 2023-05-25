@@ -10,7 +10,7 @@ function contador($valor_defecto = 10, $metodo = 1){
     }
     echo $i;
 }
-echo contador(7, 2);
+echo contador(20, 2);
 
 
 

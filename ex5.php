@@ -14,23 +14,17 @@ function verificar_alumne($nota){
 //$nota1 = ($nota * 10) /100;
 
 if($nota >= 60){
-    echo "L'alumne és de Primera Divisió";}
+    echo "L'alumne és de Primera Divisió.";}
 elseif($nota >= 45 or $nota <= 59){
-    echo "L'alumne és de Segona Divisó";}
+    echo "L'alumne és de Segona Divisó.";}
 elseif($nota >= 33 or $nota <=44){
-    echo "L'alumne és de Tercera Divisó";}
+    echo "L'alumne és de Tercera Divisó.";}
 else{
-    echo "L'estudiant reprovarà";
+    echo "L'estudiant reprovarà.";
 }
 }
 
 verificar_alumne(6,8);
-
-
-
-
-
-
 
 
 ?>

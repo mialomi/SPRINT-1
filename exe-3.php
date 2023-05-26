@@ -53,14 +53,12 @@ switch ($operacio){
         $resultat = $valor1 / $valor2;
         break;
     }
-return $resultat;
 
-
+    return $resultat;
 }
 
+//echo calculadora(32, 12, 'sumar');
 
-echo calculadora(32, 12, 'sumar');
-echo "HOLA MUNDO";
-
+//
 
 ?>

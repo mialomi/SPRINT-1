@@ -35,6 +35,8 @@ echo $X + $Y + $N + $M. "<br>";
 
 //El producte de totes les variables.
 
+echo $X * $Y * $N * $M. "<br>";
+
 //b) Crea una funció Calculadora que entri dos nombres per paràmetre, i en un tercer paràmetre et permeti fer la suma, la resta, la multiplicació o la divisió dels dos nombres
 
 function calculadora($valor1, $valor2, $operacio){
@@ -57,8 +59,8 @@ switch ($operacio){
     return $resultat;
 }
 
-//echo calculadora(32, 12, 'sumar');
+echo calculadora(32, 12, 'sumar');
 
-//
+
 
 ?>

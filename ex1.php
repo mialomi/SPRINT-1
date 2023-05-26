@@ -4,18 +4,18 @@
 
 $number = 1988;
 $decimal = 1.988;
-$text = "this is a String";
+$text = "This is a String.";
 $option = true;
 
-echo $number;
-echo $decimal;
-echo $text;
-echo $option;
+echo $number."<br>";
+echo $decimal ."<br>";
+echo $text ."<br>";
+echo $option ."<br>";
 
 //Després crea una constant que inclogui el teu nom i mostra-ho en format títol per pantalla.
 
 define("NAME", "Mia");
-echo NAME;
-echo "<h1>". NAME ."</h1>";
+echo NAME ."<br>";
+echo "<h1>". NAME ."</h1>" ."<br>";
 
 ?>

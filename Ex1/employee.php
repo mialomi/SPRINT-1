@@ -4,8 +4,8 @@
 
 
 class Employee{
-    private $nom = "";
-    public $sou = 0;
+    protected $nom = "";
+    protected $sou = 0;
 
     public function initialize ($nom, $sou){
         $this -> nom = $nom;
@@ -15,9 +15,9 @@ class Employee{
 
     public function print(){
         if($this -> sou > 6000){
-            echo $this ->nom. ", has de pagar impostos";}
+            echo $this ->nom. ", has de pagar impostos.";}
         else{
-            echo $this -> nom. " , no has de pagar impostos";
+            echo $this -> nom. ", no has de pagar impostos.";
         } 
     }
 

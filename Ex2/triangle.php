@@ -1,13 +1,15 @@
 <?php
 
-class Triangle extends Shape{
+include_once "./shape.php";
 
-public function calcular_area(){
-    $resultat = ($this -> ample * $this -> alt) / 2;
+class Triangle extends shape{
 
-    return $resultat;
+    public function calcular_area(){
+        $resultat = ($this -> ample * $this -> alt) / 2;
 
-}
+        return $resultat;
+
+    }
 
 }
 

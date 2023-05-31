@@ -2,7 +2,7 @@
 
 include_once "./shape.php";
 
-class Triangle extends shape{
+class Triangle extends Shape{
 
     public function calcular_area(){
         $resultat = ($this -> ample * $this -> alt) / 2;

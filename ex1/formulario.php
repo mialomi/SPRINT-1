@@ -19,7 +19,13 @@
         Email:
         <input type="text" name="email">
     </label>
-    
+    <br>
+    <br>
+    <label for="age">
+        Age:
+        <input type="number" name="age">
+    </label>
+    </label>
     <br>
     <br>
     <button type="submit">Login</button>

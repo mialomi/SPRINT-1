@@ -7,33 +7,20 @@
     <title>ex1_form</title>
 </head>
 <body>
-    <form action="datos.php" method="POST"> 
-<!-- action es la pagina donde irá la información del form -->
-    <label for="name">
+    <form action="datos.php" method="post"> 
         Name:
         <input type="text" name="name">
-     </label>
      <br>
      <br>
-    <label for="email">
         Email:
         <input type="text" name="email">
-    </label>
     <br>
     <br>
-    <label for="age">
         Age:
         <input type="number" name="age">
-    </label>
-    </label>
     <br>
     <br>
-    <button type="submit">Login</button>
-
-
-
-
-
+    <input type="submit">
     </form>
 </body>
 </html>

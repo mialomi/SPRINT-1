@@ -7,7 +7,7 @@
     <title>ex1_form</title>
 </head>
 <body>
-    <form action="datos.php" method=<form method="post" action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]);?>">
+    <form action="datos.php" method="post">
         Name:
         <input type="text" name="name">
      <br>

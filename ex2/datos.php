@@ -7,6 +7,7 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
 $name = $email = "";
 
 $name = $_POST["name"];
+$_SESSION["users"] = $name;
 echo "You have entered: Username is ". $name;
 echo "<br>";
 if(!preg_match("/^[a-zA-Z-' ]*$/", $name)){
@@ -15,7 +16,7 @@ else{
     echo "and it's valid.";
     echo "<br>";
 }
-$_SESSION["users"] = $name;
+
 
 
 $email = $_POST["email"];
@@ -38,7 +39,7 @@ if($age <= 0 or $age > 110){
 }
 echo "<br>";
 
-echo "Welcome, ". $name. "!";
+echo "Welcome, ". $_SESSION["users"]. "!";
 }
 
 

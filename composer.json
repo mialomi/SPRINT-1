@@ -1,0 +1,17 @@
+{
+    "name": "mia/tema7",
+    "require-dev": {
+        "phpunit/phpunit": "^10.2"
+    },
+    "autoload": {
+        "psr-4": {
+            "src": "src/calcularNota.php"
+        }
+    },
+    "authors": [
+        {
+            "name": "Mialomi",
+            "email": "e.silvasm@gmail.com"
+        }
+    ]
+}

@@ -1,7 +1,7 @@
 <?php
 
 
-$classA_Maths = array(
+$students_group_A = array(
     "Marc" => array(8, 5, 7, 6, 9),
     "Beth" => array(6, 5, 4, 6, 6),
     "Peter" => array(4, 5, 3, 5, 4),
@@ -12,39 +12,46 @@ $classA_Maths = array(
     "Cinthia" => array(7, 8, 6, 5, 6),
     "David" => array(6, 5, 4, 5, 4)
 );
-/*print_r ($classA_Maths)."<br>";
-foreach($classA_Maths as $student => $marks);
-    /*echo $alumne. ": <br>";
-    foreach($notas as $nota)
-    echo $nota. "<br>"; }*/
+
+/*print_r ($students_group_A)."<br>";
+foreach($students_group_A as $student => $marks){
+    echo $student. ": <br>";
+    
+    foreach($marks as $marks){
+    echo $marks. "<br>"; 
+    }
+}*/
+function calculate_studentAverage($group_student) {
+    $average_student = array();
+    foreach($group_student as $student => $marks){
+        $calculate_studentAverage = array_sum($marks) / count($marks);
+        $average[$student] = $calculate_studentAverage;
+    }
+    return $average_student;
+}
+
+function calculate_classAverage($group_students) {
+    $sum_group = array();
+    $total_students = count($group_students);
+
+    foreach($group_students as $students => $marks){
+       $sum_group = array_merge($sum_group, $marks);
+    }
+
+    $average_group = array_sum($sum_group) / count($sum_group);
+
+    return $average_group;
+}
 
 
-function average_student($class) {
-    $average = array();
-    foreach($class as $student => $marks){
-        $average_student = array_sum($marks) / count($marks);
-        $average[$student] = $average_student;}
+$averagexStudent = calculate_studentAverage($students_group_A);
+    foreach($averagexStudent as $student => $averageStudent){
+         echo "The average of " . $student . ": " . $averageStudent . "<br>";
+}
+echo "<br>";
 
-    return $average;}
-
-function average_class($class) {
-    $sumClass = array();
-
-    foreach($class as $student => $marks){
-       $sumClass = array_merge($sumClass, $marks);}
-
-    $averageClass = array_sum($sumClass) / count($sumClass);
-
-    return $averageClass;}
-
-
-$averagexStudent = average_student($classA_Maths);
-foreach($averagexStudent as $student => $averageStudent){
-    echo $student . ": " . $averageStudent . "<br>";}
-
-
-$averageClassM = average_class($classA_Maths);
-echo "The average of this class is: ". $averageClassM;
+$average_group_A = calculate_classAverage($students_group_A);
+echo "The average of this class is: ". $average_group_A;
 
 
 ?>

@@ -1,39 +1,34 @@
 <?php
 
-/*Prograna que permeti fer calculs de total de compres*/
+function chocolate($units) {
+        $subChocolate = $units * 1;
+        return $subChocolate;
+    }
 
-function candyShop() {
+function gum($units) {
+        $subGum = $units * 0.50;
+        return $subGum;
+    }
 
-    $unitC = 3;
-    $unitG = 2;
-    $unitCar = 2;
+function caramel($units){
+        $subCaramel = $units * 1.50;
+        return $subCaramel;
+    }
 
-    function choco($unitC) {
-        $subChoco = $unitC * 1;
-        return $subChoco;}
+function Candy_Shop($unit_chocolate, $unit_gum, $unit_caramel) {
 
-    function gum($unitG) {
-        $subGum = $unitG * 0.50;
-        return $subGum;}
-
-    function caramel($unitCar){
-        $subCar = $unitCar * 1.50;
-        return $subCar;}
-    
-$subChoco = choco($unitC);
-$subGum = gum($unitG);
-$subCar = caramel($unitCar);
+    $subChocolate = chocolate($unit_chocolate);
+    $subGum = gum($unit_gum);
+    $subCaramel = caramel($unit_caramel);
 
 
-$total = $subChoco + $subGum + $subCar;
-return $total;
+    $total = $subChocolate + $subGum + $subCaramel;
+    return $total;
 
 }
 
-
-
 echo "<h2> CANDY SHOP </h2> <br> 
-Total amount: " . candyShop(). " € <br> Thank you!";
+Total amount: " . Candy_Shop(3, 5, 2). " € <br> Thank you!";
 
 
 
